@@ -1,0 +1,26 @@
+/* Layout for large screens */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: roboto;
+  font-size: 1.5rem;
+  background-color: #d0ba98;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  background-color: rgb(49, 30, 0);
+}
