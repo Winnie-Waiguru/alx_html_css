@@ -1,0 +1,285 @@
+:root {
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #000000;
+  --btn-color: #c271ff;
+  --shadow-color: rgb(31, 29, 29);
+  --dark-bg: #071629;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("fonts/SourceSansPro-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-image: url("images/Object.png");
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 100px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 200;
+  color: var(--primary-text-color);
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h4,
+.float-text {
+  display: inline;
+  color: var(---bg);
+  font-weight: 600;
+}
+
+h2 > span {
+  color: var(--btn-color);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+div span {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+button {
+  display: block;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  box-shadow: 2px 2px 10px var(--shadow-color);
+  margin: 10px auto;
+}
+
+.container {
+  width: 400px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 50vh;
+}
+
+.purple {
+  background-color: var(--btn-color);
+  color: var(--primary-text-color);
+  height: 300px;
+  /* overflow: hidden; */
+  width: 100%;
+  margin-top: 20px;
+  padding: 30px 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.round-img {
+  width: 150px;
+  height: 237px;
+  color: var(--primary-text-color);
+}
+
+.round-img > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.round-img p {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.round-img h3 {
+  font-size: 18px;
+}
+
+/* Review Section */
+
+.reviewer-image-section {
+}
+
+blockquote {
+  color: var(--primary-text-color);
+  font-size: 22px;
+  width: 730px;
+  height: 68px;
+}
+
+.tutorials h2 {
+  color: var(--secondary-text-color--secondary-text-color);
+}
+
+.video-bx {
+  width: 255px;
+  height: 355px;
+}
+
+.video-inner-bx {
+  position: relative;
+}
+
+.video-img {
+  width: 255px;
+  height: 154px;
+}
+
+.video-btn {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.photographer-bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 10px 0px;
+}
+
+.photographer-image {
+  width: 30px;
+  height: 30px;
+}
+
+.float-text {
+  display: inline;
+  float: right;
+  margin-left: 40px;
+}
+
+/* Membership */
+.membership {
+  background-color: var(--dark-bg);
+  color: var(--primary-text-color);
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px 0px;
+}
+
+/* Questions */
+.questions h2 {
+  color: var(--dark-bg);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+
+.grid-item {
+  padding: 20px;
+  width: 350px;
+  height: 242;
+}
+
+footer {
+  background-color: var(--dark-bg);
+  color: var(--primary-text-color);
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 30px 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.fa-brands {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-text-color);
+  color: var(--dark-bg);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 0px 8px;
+}
+
+.centered-txt {
+  text-align: center;
+  font-size: 12px;
+}
