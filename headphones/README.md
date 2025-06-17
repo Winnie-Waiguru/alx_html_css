@@ -6,8 +6,6 @@ A responsive website project for a fictional headphone brand, built with **HTML*
 
 [View Website](https://yourwebsiteurl.com)
 
----
-
 ## Features
 
 - Fully responsive design (mobile, tablet, desktop)
@@ -16,15 +14,11 @@ A responsive website project for a fictional headphone brand, built with **HTML*
 - Image and content sections for product showcases
 - Smooth navigation and consistent layout
 
----
-
 ## Technologies Used
 
 - HTML5
 - CSS3 (Flexbox, Grid, Media Queries)
 - JavaScript (ES6+)
-
----
 
 ## Final Design Showcase
 
