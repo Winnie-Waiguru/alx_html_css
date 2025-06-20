@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headphones</title>
+    <link rel="stylesheet" href="3-styles.css" />
+    <script
+      src="https://kit.fontawesome.com/60979908e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hero-section">
+      <header>
+        <nav>
+          <div class="header-icons">
+            <div class="icon-wrapper">
+              <i id="close-icon" class="fa-solid fa-xmark"></i>
+              <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </div>
+
+            <img class="logo" src="images/logo_headphones.png" alt="logo" />
+          </div>
+          <ul id="menu-items">
+            <li><a href="#">what we do</a></li>
+            <li><a href="#">our results</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Introduction -->
+      <div class="introduction">
+        <section class="introduction-section">
+          <div class="container-column">
+            <div>
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+              <p>
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit
+              </p>
+            </div>
+
+            <button type="button">CALL TO ACTION</button>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              dignissim lorem vitae velit condimentum rhoncus ac vel sem. Sed at
+              varius diam, vitae pretium ex. Proin vulputate semper urna, vel
+              molestie mauris congue in. Aenean tincidunt sodales massa, sit
+              amet molestie diam efficitur vel. Aenean non iaculis nulla.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- About us section -->
+    <section class="plain-section container-column">
+      <h2>What we do ...</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim
+        lorem vitae velit condimentum rhoncus ac vel sem. Sed at varius diam,
+        vitae pretium ex. Proin vulputate semper urna, vel molestie mauris
+        congue in. Aenean tincidunt sodales massa, sit amet molestie diam
+        efficitur vel. Aenean non iaculis nulla.
+      </p>
+      <div class="grid-column">
+        <div class="grid-item">
+          <img src="images/waves.png" alt="sound wave icon" />
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/multimedia.png" alt="video icon" />
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/music.png" alt="music icon" />
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/listening-ear.png" alt="listening ear icon" />
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </div>
+    </section>
+    <!-- Results section -->
+    <div class="hero-section">
+      <section class="container-column">
+        <h2>Our results speak for themselves</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim
+          lorem vitae velit condimentum rhoncus ac vel sem. Sed at varius diam,
+          vitae pretium ex. Proin vulputate semper urna, vel molestie mauris
+          congue in. Aenean tincidunt sodales massa, sit amet molestie diam
+          efficitur vel. Aenean non iaculis nulla.
+        </p>
+        <div class="grid-column">
+          <div class="pentagone">
+            <img src="images/pentagone.png" alt="pentagone shape" />
+            <h3>+ 2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="pentagone">
+            <img src="images/pentagone.png" alt="pentagone shape" />
+            <h3>+ 2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="pentagone">
+            <img src="images/pentagone.png" alt="pentagone shape" />
+            <h3>+ 2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="pentagone">
+            <img src="images/pentagone.png" alt="pentagone shape" />
+            <h3>+ 2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Contact section -->
+    <section class="plain-section container-column">
+      <h2>Contact us</h2>
+      <form action="" id="contact-form">
+        <div>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="message">Your message</label><br />
+          <input type="text" id="message" />
+        </div>
+        <button type="submit">CALL TO ACTION</button>
+      </form>
+    </section>
+
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const menuItems = document.getElementById("menu-items");
+      const closeIcon = document.getElementById("close-icon");
+
+      menuIcon.addEventListener("click", function () {
+        menuItems.style.display = "block";
+        closeIcon.style.visibility = "visible";
+        menuIcon.style.visibility = "hidden";
+      });
+
+      closeIcon.addEventListener("click", function () {
+        menuItems.style.display = "none";
+        closeIcon.style.visibility = "hidden";
+        menuIcon.style.visibility = "visible";
+      });
+    </script>
+  </body>
+</html>
